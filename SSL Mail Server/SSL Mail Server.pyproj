@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bf96bd41-eea5-411e-99b4-4709a9bf38a7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SSL_Mail_Server.py</StartupFile>
+    <StartupFile>SMTP.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SSL_Mail_Server.py" />
+    <Compile Include="IMAP.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
